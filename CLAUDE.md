@@ -20,6 +20,21 @@ What it does: the user enters a Philippine project's basics, site notes and clie
 3. The repo is public. Never hardcode, log or commit the API key. `.env` is in `.gitignore`, `.env.example` holds placeholders only.
 4. Every model ID lives in `lib/config.ts` and nowhere else.
 
+## Hackathon submission rules (Devpost)
+
+From the official rules at `nebiusglobalaihackathon.devpost.com/rules`. Recheck that page before submitting.
+
+- Deadline: Oct 30, 2026, 10:00 am PDT (17:00 UTC). Our target stays Oct 29. A saved Devpost draft is not a submission.
+- The app must make runtime calls to the Token Factory inference API and use at least one NVIDIA open-source model. Our hard rules above are stricter: Nemotron only for text generation.
+- The deployed demo must use real model calls. `MOCK_MODELS` is for local UI work only and must be unset on Vercel.
+- Working demo URL that judges can use. Judging runs Dec 1–15, 2026, so the Vercel deployment and Token Factory credits must stay live through then.
+- Public repo with an open-source license file GitHub can detect (`LICENSE`, MIT). The repo must hold all source code, assets and instructions needed to run the app.
+- README: setup steps, plus how we use Nemotron and how Token Factory helped.
+- Demo video under 3 minutes, public on YouTube, showing the app running. No third-party trademarks or copyrighted music without permission.
+- Submission form also needs: project description, track (Best Apps and Agents), and product feedback on Token Factory and the NVIDIA models. Note friction and wins as we hit them.
+- Original work owned by us. Third-party SDKs, APIs, fonts and data only under their license terms. Source PDFs must be official government copies of PD 1096, RA 9514 and their IRRs, not commercial annotated editions or reviewers.
+- Judging, four equal criteria: Technological Implementation (how well we use Token Factory and Nemotron), Design, Potential Impact, Quality of the Idea.
+
 ## Stack
 
 - Next.js (App Router) + TypeScript, deployed on Vercel
