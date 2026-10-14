@@ -1,4 +1,5 @@
 // Sends one tiny request to each Nemotron tier and one embedding request, through Token Factory.
+// Always calls the real API; MOCK_MODELS is deliberately ignored here.
 // Usage: npm run smoke
 
 import OpenAI from "openai";
